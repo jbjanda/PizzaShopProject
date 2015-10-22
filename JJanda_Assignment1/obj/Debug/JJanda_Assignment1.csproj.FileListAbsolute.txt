@@ -38,3 +38,6 @@ C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assig
 C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.Properties.Resources.resources
 C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.csproj.GenerateResource.Cache
 C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.FormThinCrust.resources
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\bin\Debug\JJanda_Assignment1.exe.config
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.exe
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.pdb
