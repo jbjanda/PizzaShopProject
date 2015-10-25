@@ -19,7 +19,7 @@ namespace JJanda_Assignment1
     /// are an item Description, the number of Items selected, a Size, what type of 
     /// Crust, and the Price.
     /// </summary>
-    class Item
+    public class Item
     {
         // field variables
         private string _description;
@@ -154,6 +154,24 @@ namespace JJanda_Assignment1
             return message;
         }
 
+        /// <summary>
+        /// Calculate Price method accepts a default parameter which is set
+        /// to $0.00 in order to add variable prices to an Item order. Base
+        /// price is deterimined by the Size and Quantity Properties.
+        /// </summary>
+        /// <param name="pAddOnPrice">An additional expense added to an 
+        ///                           Item Price</param>
+        public void CalculatePrice(decimal pAddOnPrice = 0m)
+        {
+            if(Size =="Large")
+            {
+                Price = Quantity * (10.00m + pAddOnPrice);
+            }
+            else if (Size =="Family")
+            {
+                Price = Quantity * (13.00m + pAddOnPrice);
+            }
+         }
      
         
     }

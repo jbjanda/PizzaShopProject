@@ -16,7 +16,7 @@ namespace JJanda_Assignment1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PizzaShop());
+            Application.Run(new FormNavigation());
         
         }
     }

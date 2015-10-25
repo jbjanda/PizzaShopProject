@@ -7,7 +7,6 @@
  */
 
 
-/// GIT COMMIT TEST TEXT
 
 using System;
 using System.Collections.Generic;

@@ -50,6 +50,7 @@
             this.labelPizzaSign.Size = new System.Drawing.Size(298, 17);
             this.labelPizzaSign.TabIndex = 0;
             this.labelPizzaSign.Text = "Welcome to Jeff Janda\'s Pizza Shop";
+            this.labelPizzaSign.Click += new System.EventHandler(this.labelPizzaSign_Click);
             // 
             // labelPizzaOrder
             // 

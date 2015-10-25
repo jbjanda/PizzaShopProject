@@ -142,5 +142,10 @@ namespace JJanda_Assignment1
             //opens a Thin Crust Form
             thinCrustForm.ShowDialog();
         }
+
+        private void labelPizzaSign_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

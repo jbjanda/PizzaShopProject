@@ -44,6 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirmation.Designer.cs">
+      <DependentUpon>FormConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreate.Designer.cs">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNavigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNavigation.Designer.cs">
+      <DependentUpon>FormNavigation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThinCrust.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +84,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormConfirmation.resx">
+      <DependentUpon>FormConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreate.resx">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNavigation.resx">
+      <DependentUpon>FormNavigation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormShop.resx">
       <DependentUpon>FormShop.cs</DependentUpon>
     </EmbeddedResource>
