@@ -27,7 +27,7 @@ namespace JJanda_Assignment1
         private string _size;
         private string _crust;
         private decimal _price;
-    
+
         /// <summary>
         /// Default Constructor. Creates an Item object with empty values.
         /// </summary>
@@ -48,7 +48,7 @@ namespace JJanda_Assignment1
         /// <param name="pSize">Size</param>
         /// <param name="pCrust">Crust</param>
         /// <param name="pPrice">Price</param>
-        public Item(string pDescription, int pQuantity, string pSize, 
+        public Item(string pDescription, int pQuantity, string pSize,
                     string pCrust, decimal pPrice)
         {
             Description = pDescription;
@@ -63,10 +63,10 @@ namespace JJanda_Assignment1
         /// </summary>
         ~Item()
         {
-            _description = string.Empty;
+            _description = null;
             _quantity = 0;
-            _size = string.Empty;
-            _crust = string.Empty;
+            _size = null;
+            _crust = null;
             _price = 0;
         }
         /// <summary>
@@ -137,18 +137,18 @@ namespace JJanda_Assignment1
             {
                 //formats Item information into a summary for a single Item
                 message = Quantity + " " + Size + " sized " + Description + " "
-                        + Crust + " crust pizza for a total of " 
-                        + Price.ToString("c");                        
+                        + Crust + " crust pizza for a total of "
+                        + Price.ToString("c");
             }
 
             //condition if Item as a quantity of more than one
-            else  
+            else
             {
                 //formats Item information into a summary for multiple Items
                 message = Quantity + " " + Size + " sized " + Description + " "
-                        + Crust + " crust pizzas for a total of " + Price.ToString("c");         
+                        + Crust + " crust pizzas for a total of " + Price.ToString("c");
             }
-          
+
 
             //returns the message based on the above conditions
             return message;
@@ -163,16 +163,16 @@ namespace JJanda_Assignment1
         ///                           Item Price</param>
         public void CalculatePrice(decimal pAddOnPrice = 0m)
         {
-            if(Size =="Large")
+            if (Size == "Large")
             {
                 Price = Quantity * (10.00m + pAddOnPrice);
             }
-            else if (Size =="Family")
+            else if (Size == "Family")
             {
                 Price = Quantity * (13.00m + pAddOnPrice);
             }
-         }
-     
-        
+        }
+
+
     }
 }

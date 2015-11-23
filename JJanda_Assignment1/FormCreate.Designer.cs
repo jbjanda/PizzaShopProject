@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.submitOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStripTop = new System.Windows.Forms.MenuStrip();
+            this.addToppingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toppingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.submitOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelSubTitle = new System.Windows.Forms.Label();
             this.groupBoxCrust = new System.Windows.Forms.GroupBox();
             this.radioButtonPan = new System.Windows.Forms.RadioButton();
             this.radioButtonOriginal = new System.Windows.Forms.RadioButton();
@@ -70,31 +71,31 @@
             this.checkBoxNoTop = new System.Windows.Forms.CheckBox();
             this.buttonRemoveTop = new System.Windows.Forms.Button();
             this.labelCredit = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
+            this.menuStripTop.SuspendLayout();
             this.groupBoxCrust.SuspendLayout();
             this.groupBoxSize.SuspendLayout();
             this.groupBoxSauce.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStripTop
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.submitOrderToolStripMenuItem,
+            this.menuStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addToppingToolStripMenuItem,
             this.removeToolStripMenuItem,
+            this.submitOrderToolStripMenuItem,
             this.clearOrderToolStripMenuItem,
             this.closeToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(453, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStripTop.Location = new System.Drawing.Point(0, 0);
+            this.menuStripTop.Name = "menuStripTop";
+            this.menuStripTop.Size = new System.Drawing.Size(453, 24);
+            this.menuStripTop.TabIndex = 0;
             // 
-            // submitOrderToolStripMenuItem
+            // addToppingToolStripMenuItem
             // 
-            this.submitOrderToolStripMenuItem.Name = "submitOrderToolStripMenuItem";
-            this.submitOrderToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-            this.submitOrderToolStripMenuItem.Text = "Submit Order";
-            this.submitOrderToolStripMenuItem.Click += new System.EventHandler(this.buttonSubmit_Click);
+            this.addToppingToolStripMenuItem.Name = "addToppingToolStripMenuItem";
+            this.addToppingToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.addToppingToolStripMenuItem.Text = "Add Topping";
+            this.addToppingToolStripMenuItem.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // removeToolStripMenuItem
             // 
@@ -116,7 +117,15 @@
             // 
             this.allToolStripMenuItem.Name = "allToolStripMenuItem";
             this.allToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.allToolStripMenuItem.Text = "All";
+            this.allToolStripMenuItem.Text = "All Toppings";
+            this.allToolStripMenuItem.Click += new System.EventHandler(this.buttonRemoveAll_Click);
+            // 
+            // submitOrderToolStripMenuItem
+            // 
+            this.submitOrderToolStripMenuItem.Name = "submitOrderToolStripMenuItem";
+            this.submitOrderToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.submitOrderToolStripMenuItem.Text = "Submit Order";
+            this.submitOrderToolStripMenuItem.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // clearOrderToolStripMenuItem
             // 
@@ -135,20 +144,21 @@
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Location = new System.Drawing.Point(145, 41);
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(103, 41);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(116, 13);
+            this.labelTitle.Size = new System.Drawing.Size(236, 25);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "Create Your Own Pizza";
             // 
-            // label1
+            // labelSubTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(153, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Pick Your Base Pizza";
+            this.labelSubTitle.AutoSize = true;
+            this.labelSubTitle.Location = new System.Drawing.Point(153, 85);
+            this.labelSubTitle.Name = "labelSubTitle";
+            this.labelSubTitle.Size = new System.Drawing.Size(108, 13);
+            this.labelSubTitle.TabIndex = 2;
+            this.labelSubTitle.Text = "Pick Your Base Pizza";
             // 
             // groupBoxCrust
             // 
@@ -158,7 +168,7 @@
             this.groupBoxCrust.Location = new System.Drawing.Point(134, 101);
             this.groupBoxCrust.Name = "groupBoxCrust";
             this.groupBoxCrust.Size = new System.Drawing.Size(86, 100);
-            this.groupBoxCrust.TabIndex = 3;
+            this.groupBoxCrust.TabIndex = 4;
             this.groupBoxCrust.TabStop = false;
             this.groupBoxCrust.Text = "Crust";
             // 
@@ -189,10 +199,10 @@
             this.radioButtonThin.AutoSize = true;
             this.radioButtonThin.Location = new System.Drawing.Point(6, 45);
             this.radioButtonThin.Name = "radioButtonThin";
-            this.radioButtonThin.Size = new System.Drawing.Size(73, 17);
+            this.radioButtonThin.Size = new System.Drawing.Size(46, 17);
             this.radioButtonThin.TabIndex = 0;
             this.radioButtonThin.TabStop = true;
-            this.radioButtonThin.Text = "Thin Crust";
+            this.radioButtonThin.Text = "Thin";
             this.radioButtonThin.UseVisualStyleBackColor = true;
             // 
             // groupBoxSize
@@ -202,7 +212,7 @@
             this.groupBoxSize.Location = new System.Drawing.Point(12, 101);
             this.groupBoxSize.Name = "groupBoxSize";
             this.groupBoxSize.Size = new System.Drawing.Size(99, 73);
-            this.groupBoxSize.TabIndex = 4;
+            this.groupBoxSize.TabIndex = 3;
             this.groupBoxSize.TabStop = false;
             this.groupBoxSize.Text = "Size";
             // 
@@ -309,7 +319,7 @@
             // labelToppingsTitle
             // 
             this.labelToppingsTitle.AutoSize = true;
-            this.labelToppingsTitle.Location = new System.Drawing.Point(106, 216);
+            this.labelToppingsTitle.Location = new System.Drawing.Point(126, 216);
             this.labelToppingsTitle.Name = "labelToppingsTitle";
             this.labelToppingsTitle.Size = new System.Drawing.Size(155, 13);
             this.labelToppingsTitle.TabIndex = 8;
@@ -321,7 +331,7 @@
             this.listBoxCheese.Location = new System.Drawing.Point(0, 250);
             this.listBoxCheese.Name = "listBoxCheese";
             this.listBoxCheese.Size = new System.Drawing.Size(129, 95);
-            this.listBoxCheese.TabIndex = 9;
+            this.listBoxCheese.TabIndex = 10;
             // 
             // labelCheese
             // 
@@ -329,7 +339,7 @@
             this.labelCheese.Location = new System.Drawing.Point(19, 231);
             this.labelCheese.Name = "labelCheese";
             this.labelCheese.Size = new System.Drawing.Size(43, 13);
-            this.labelCheese.TabIndex = 10;
+            this.labelCheese.TabIndex = 9;
             this.labelCheese.Text = "Cheese";
             // 
             // labelMeat
@@ -338,7 +348,7 @@
             this.labelMeat.Location = new System.Drawing.Point(123, 229);
             this.labelMeat.Name = "labelMeat";
             this.labelMeat.Size = new System.Drawing.Size(31, 13);
-            this.labelMeat.TabIndex = 12;
+            this.labelMeat.TabIndex = 11;
             this.labelMeat.Text = "Meat";
             // 
             // listBoxMeat
@@ -347,7 +357,7 @@
             this.listBoxMeat.Location = new System.Drawing.Point(135, 250);
             this.listBoxMeat.Name = "listBoxMeat";
             this.listBoxMeat.Size = new System.Drawing.Size(88, 95);
-            this.listBoxMeat.TabIndex = 11;
+            this.listBoxMeat.TabIndex = 12;
             // 
             // labelVegetable
             // 
@@ -355,7 +365,7 @@
             this.labelVegetable.Location = new System.Drawing.Point(226, 231);
             this.labelVegetable.Name = "labelVegetable";
             this.labelVegetable.Size = new System.Drawing.Size(55, 13);
-            this.labelVegetable.TabIndex = 14;
+            this.labelVegetable.TabIndex = 13;
             this.labelVegetable.Text = "Vegetable";
             // 
             // listBoxVeg
@@ -364,7 +374,7 @@
             this.listBoxVeg.Location = new System.Drawing.Point(229, 250);
             this.listBoxVeg.Name = "listBoxVeg";
             this.listBoxVeg.Size = new System.Drawing.Size(88, 95);
-            this.listBoxVeg.TabIndex = 13;
+            this.listBoxVeg.TabIndex = 14;
             // 
             // listBoxToppings
             // 
@@ -372,7 +382,7 @@
             this.listBoxToppings.Location = new System.Drawing.Point(334, 250);
             this.listBoxToppings.Name = "listBoxToppings";
             this.listBoxToppings.Size = new System.Drawing.Size(109, 95);
-            this.listBoxToppings.TabIndex = 15;
+            this.listBoxToppings.TabIndex = 16;
             // 
             // labelToppings
             // 
@@ -380,7 +390,7 @@
             this.labelToppings.Location = new System.Drawing.Point(331, 229);
             this.labelToppings.Name = "labelToppings";
             this.labelToppings.Size = new System.Drawing.Size(76, 13);
-            this.labelToppings.TabIndex = 16;
+            this.labelToppings.TabIndex = 15;
             this.labelToppings.Text = "Your Toppings";
             // 
             // buttonSubmit
@@ -398,7 +408,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(333, 351);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(88, 23);
-            this.buttonAdd.TabIndex = 18;
+            this.buttonAdd.TabIndex = 19;
             this.buttonAdd.Text = "Add Topping";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -408,7 +418,7 @@
             this.buttonRemoveAll.Location = new System.Drawing.Point(12, 442);
             this.buttonRemoveAll.Name = "buttonRemoveAll";
             this.buttonRemoveAll.Size = new System.Drawing.Size(75, 23);
-            this.buttonRemoveAll.TabIndex = 19;
+            this.buttonRemoveAll.TabIndex = 21;
             this.buttonRemoveAll.Text = "Remove All";
             this.buttonRemoveAll.UseVisualStyleBackColor = true;
             this.buttonRemoveAll.Click += new System.EventHandler(this.buttonRemoveAll_Click);
@@ -418,7 +428,7 @@
             this.buttonClear.Location = new System.Drawing.Point(264, 442);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonClear.TabIndex = 20;
+            this.buttonClear.TabIndex = 23;
             this.buttonClear.Text = "Clear Order";
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
@@ -435,7 +445,7 @@
             this.buttonClose.Location = new System.Drawing.Point(346, 442);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.TabIndex = 21;
+            this.buttonClose.TabIndex = 24;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
@@ -445,7 +455,7 @@
             this.labelMessage.Location = new System.Drawing.Point(12, 391);
             this.labelMessage.Name = "labelMessage";
             this.labelMessage.Size = new System.Drawing.Size(409, 48);
-            this.labelMessage.TabIndex = 22;
+            this.labelMessage.TabIndex = 20;
             // 
             // checkBoxNoTop
             // 
@@ -453,7 +463,7 @@
             this.checkBoxNoTop.Location = new System.Drawing.Point(229, 356);
             this.checkBoxNoTop.Name = "checkBoxNoTop";
             this.checkBoxNoTop.Size = new System.Drawing.Size(87, 17);
-            this.checkBoxNoTop.TabIndex = 23;
+            this.checkBoxNoTop.TabIndex = 18;
             this.checkBoxNoTop.Text = "No Toppings";
             this.checkBoxNoTop.UseVisualStyleBackColor = true;
             this.checkBoxNoTop.Click += new System.EventHandler(this.buttonRemoveAll_Click);
@@ -463,7 +473,7 @@
             this.buttonRemoveTop.Location = new System.Drawing.Point(93, 442);
             this.buttonRemoveTop.Name = "buttonRemoveTop";
             this.buttonRemoveTop.Size = new System.Drawing.Size(98, 23);
-            this.buttonRemoveTop.TabIndex = 24;
+            this.buttonRemoveTop.TabIndex = 22;
             this.buttonRemoveTop.Text = "Remove Topping";
             this.buttonRemoveTop.UseVisualStyleBackColor = true;
             this.buttonRemoveTop.Click += new System.EventHandler(this.buttonRemoveTop_Click);
@@ -505,15 +515,15 @@
             this.Controls.Add(this.groupBoxSauce);
             this.Controls.Add(this.groupBoxSize);
             this.Controls.Add(this.groupBoxCrust);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelSubTitle);
             this.Controls.Add(this.labelTitle);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.menuStripTop);
+            this.MainMenuStrip = this.menuStripTop;
             this.Name = "FormCreate";
             this.Text = "Create Your Own Form";
             this.Load += new System.EventHandler(this.FormCreate_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStripTop.ResumeLayout(false);
+            this.menuStripTop.PerformLayout();
             this.groupBoxCrust.ResumeLayout(false);
             this.groupBoxCrust.PerformLayout();
             this.groupBoxSize.ResumeLayout(false);
@@ -527,9 +537,9 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStripTop;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSubTitle;
         private System.Windows.Forms.GroupBox groupBoxCrust;
         private System.Windows.Forms.RadioButton radioButtonPan;
         private System.Windows.Forms.RadioButton radioButtonOriginal;
@@ -569,5 +579,6 @@
         private System.Windows.Forms.ToolStripMenuItem clearOrderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.Label labelCredit;
+        private System.Windows.Forms.ToolStripMenuItem addToppingToolStripMenuItem;
     }
 }

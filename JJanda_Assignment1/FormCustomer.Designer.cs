@@ -146,6 +146,7 @@
             this.mskTxtBoxPhoneNumber.Name = "mskTxtBoxPhoneNumber";
             this.mskTxtBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
             this.mskTxtBoxPhoneNumber.TabIndex = 6;
+            
             // 
             // FormCustomer
             // 

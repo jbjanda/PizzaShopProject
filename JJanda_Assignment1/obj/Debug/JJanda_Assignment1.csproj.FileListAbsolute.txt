@@ -52,3 +52,10 @@ C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assig
 C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.csproj.GenerateResource.Cache
 C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.FormCreate.resources
 C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.FormConfirmation.resources
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\bin\Debug\JJanda_Assignment1.XML
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\bin\Debug\PMLocationsDatabase2012.mdf
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\bin\Debug\PMLocationsDatabase2012_log.ldf
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.FormLocations.resources
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.FormStateMaint.resources
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.FormLocationMaint.resources
+C:\Users\GrimTK\Documents\School\classes\C#\Assignment\Assignment 2\jjanda.Assignment2\JJanda_Assignment solution\PizzaShopProject.git\JJanda_Assignment1\obj\Debug\JJanda_Assignment1.FormAdmin.resources
